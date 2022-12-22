@@ -8,9 +8,9 @@ namespace RuleOfThree
         {
             Console.Write("Please enter an integer:");
             int num = int.Parse(Console.ReadLine());
-            int I = 0;
+            int i = 0;
 
-            while (num==0)
+            while (num!=1)
             {
                 if (num%2==0)
                 {
@@ -19,9 +19,9 @@ namespace RuleOfThree
                 else 
                 {
                     num = num * 3 + 1;
-                }I++;
+                }i++;
             }
-            Console.WriteLine(I+ num);
+            Console.WriteLine(i+ num);
         }
     }
 }
